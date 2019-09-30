@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GridMate_Demo</fullName>
+    <types>
+        <members>SDR_Workspace</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Contact.C_Level__c</members>
+        <members>Opportunity.Comments__c</members>
+        <members>Opportunity.Deal_Time__c</members>
+        <members>Opportunity.Industries__c</members>
+        <members>Opportunity.Late__c</members>
+        <members>Opportunity.Sponsor__c</members>
+        <members>Project__c.Account__c</members>
+        <members>Project__c.Deadline__c</members>
+        <members>Project__c.Project_Manager__c</members>
+        <members>Project__c.Status__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Project__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Accounts</members>
+        <members>Leads</members>
+        <members>Opportunities</members>
+        <members>SDR_Workspace</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Account_Record_Page</members>
+        <members>Accounts_SDR</members>
+        <members>Contact_Record_Page</members>
+        <members>Leads_SDR</members>
+        <members>Opportunity_Record_Page</members>
+        <members>Opportunity_SDR</members>
+        <members>SDR_Workspace</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Account-Account Layout</members>
+        <members>Case-Case Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>Project__c-Project Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Account.AllAccounts</members>
+        <members>Contact.AllContacts</members>
+        <members>Opportunity.AllOpportunities</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>Standard</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Case.Update_Status</members>
+        <members>Opportunity.Update_Stage</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Account.Mass_Edit</members>
+        <members>Contact.Mass_Edit</members>
+        <members>Project__c.Mass_Edit</members>
+        <name>WebLink</name>
+    </types>
+    <version>46.0</version>
+</Package>
