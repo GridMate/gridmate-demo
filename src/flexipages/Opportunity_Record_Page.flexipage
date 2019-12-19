@@ -7,6 +7,10 @@
                 <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
+                <name>hideChatterActions</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>numVisibleActions</name>
                 <value>3</value>
             </componentInstanceProperties>
@@ -43,11 +47,27 @@
                 <value>#FFFFFF</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
+                <name>canClone</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>canCreate</name>
                 <value>true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canDelete</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canExport</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canFilter</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canFreeze</name>
                 <value>true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
@@ -89,26 +109,282 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
+            <componentInstanceProperties>
+                <name>TotalBgColor</name>
+                <value>#0070d2</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>TotalColor</name>
+                <value>#FFFFFF</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canClone</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canCreate</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canDelete</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canExport</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canFilter</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canFreeze</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canUpdate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>customIcon</name>
+                <value>standard:contact</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultValues</name>
+                <value>{}</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>frozenColumns</name>
+                <value>0</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>jsonActions</name>
+                <value>[{&quot;label&quot;:&quot;New Contact Role&quot;,&quot;name&quot;:&quot;NewOpportunityContactRole&quot;,&quot;component&quot;:&quot;gmpkg:DataGridCreateOCRComponent&quot;,&quot;global&quot;:true}]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>jsonSearchFields</name>
+                <value>Contact.Name</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>order</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>pageSize</name>
+                <value>6</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>recordRelated</name>
+                <value>[]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListLabel</name>
+                <value>Contact Roles</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>rowLimit</name>
+                <value>100</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>wildCardSearch</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentName>gmpkg:RelatedListDataGridComponent</componentName>
+        </componentInstances>
+        <name>Facet-cf322be3-f130-4058-a709-19f5692f2f0c</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>TotalBgColor</name>
+                <value>#0070d2</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>TotalColor</name>
+                <value>#FFFFFF</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canClone</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canCreate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canDelete</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canExport</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canFilter</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canFreeze</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canUpdate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>customIcon</name>
+                <value>standard:contact</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultValues</name>
+                <value>{}</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>frozenColumns</name>
+                <value>0</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>jsonActions</name>
+                <value>[]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>order</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>pageSize</name>
+                <value>10</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>recordRelated</name>
+                <value>[]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListLabel</name>
+                <value>Opportunity Team</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>rowLimit</name>
+                <value>100</value>
+            </componentInstanceProperties>
+            <componentName>gmpkg:RelatedListDataGridComponent</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>parentFieldApiName</name>
+                <value>Opportunity.Id</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListApiName</name>
+                <value>OpportunityTeamMembers</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListComponentOverride</name>
+                <value>GRID</value>
+            </componentInstanceProperties>
+            <componentName>force:relatedListSingleContainer</componentName>
+        </componentInstances>
+        <name>Facet-8685480f-8c0c-4235-b2a7-4f67d31eb80f</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>TotalBgColor</name>
+                <value>#0070d2</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>TotalColor</name>
+                <value>#FFFFFF</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canClone</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canCreate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canDelete</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canExport</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canFilter</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canFreeze</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canUpdate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>customIcon</name>
+                <value>standard:contact</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultValues</name>
+                <value>{}</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>frozenColumns</name>
+                <value>0</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>jsonActions</name>
+                <value>[]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>order</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>pageSize</name>
+                <value>10</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>recordRelated</name>
+                <value>[]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListLabel</name>
+                <value>Opportunity Splits</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>rowLimit</name>
+                <value>100</value>
+            </componentInstanceProperties>
+            <componentName>gmpkg:RelatedListDataGridComponent</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>parentFieldApiName</name>
+                <value>Opportunity.Id</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListApiName</name>
+                <value>OpportunitySplits</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListComponentOverride</name>
+                <value>GRID</value>
+            </componentInstanceProperties>
+            <componentName>force:relatedListSingleContainer</componentName>
+        </componentInstances>
+        <name>Facet-1pdnb6vf393</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
             <componentName>force:detailPanel</componentName>
         </componentInstances>
         <mode>Replace</mode>
         <name>detailTabContent</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
-            <componentName>runtime_sales_activities:activityPanel</componentName>
-        </componentInstances>
-        <mode>Replace</mode>
-        <name>activityTabContent</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
-            <componentName>forceChatter:recordFeedContainer</componentName>
-        </componentInstances>
-        <mode>Replace</mode>
-        <name>feedTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -130,37 +406,44 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>body</name>
+                <value>Facet-cf322be3-f130-4058-a709-19f5692f2f0c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Roles</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-8685480f-8c0c-4235-b2a7-4f67d31eb80f</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Teams</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-1pdnb6vf393</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Splits</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
                 <value>detailTabContent</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>title</name>
                 <value>Standard.Tab.detail</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:tab</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>active</name>
-                <value>false</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>body</name>
-                <value>activityTabContent</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>title</name>
-                <value>Standard.Tab.activity</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:tab</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>body</name>
-                <value>feedTabContent</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>title</name>
-                <value>Standard.Tab.collaborate</value>
             </componentInstanceProperties>
             <componentName>flexipage:tab</componentName>
         </componentInstances>
@@ -203,6 +486,9 @@
                 <value>true</value>
             </componentInstanceProperties>
             <componentName>force:relatedListSingleContainer</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentName>runtime_sales_activities:activityPanel</componentName>
         </componentInstances>
         <mode>Replace</mode>
         <name>sidebar</name>

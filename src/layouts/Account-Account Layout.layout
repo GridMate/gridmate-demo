@@ -11,16 +11,20 @@
         <label>Account Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>OwnerId</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>ParentId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Ultimate_Parent__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>AccountNumber</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -201,6 +205,7 @@
         <fields>CONTACT.EMAIL</fields>
         <fields>CONTACT.PHONE1</fields>
         <fields>C_Level__c</fields>
+        <fields>CONTACT.CREATED_DATE</fields>
         <relatedList>RelatedContactList</relatedList>
     </relatedLists>
     <relatedLists>
@@ -244,7 +249,7 @@
         <fields>CASES.PRIORITY</fields>
         <fields>CASES.CREATED_DATE_DATE_ONLY</fields>
         <fields>CASES.STATUS</fields>
-        <fields>OWNER_NAME</fields>
+        <fields>Case_Response__c</fields>
         <relatedList>RelatedCaseList</relatedList>
     </relatedLists>
     <relatedLists>
@@ -262,6 +267,12 @@
         <fields>Project_Manager__c</fields>
         <fields>Status__c</fields>
         <relatedList>Project__c.Account__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>ACCOUNT.ADDRESS1_CITY</fields>
+        <fields>ACCOUNT.PHONE1</fields>
+        <relatedList>Account.Ultimate_Parent__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
