@@ -6,6 +6,9 @@
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>Account.CEO__c</members>
+        <members>Account.Open_Case__c</members>
+        <members>Account.Ultimate_Parent__c</members>
         <members>Case.Case_Response__c</members>
         <members>Contact.C_Level__c</members>
         <members>Opportunity.Comments__c</members>
@@ -39,6 +42,7 @@
         <members>Opportunity_Record_Page</members>
         <members>Opportunity_SDR</members>
         <members>SDR_Workspace</members>
+        <members>SDR_Workspace_UtilityBar</members>
         <name>FlexiPage</name>
     </types>
     <types>
