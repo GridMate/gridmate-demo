@@ -33,6 +33,7 @@
         <members>Account_Record_Page</members>
         <members>Accounts_SDR</members>
         <members>Contact_Record_Page</members>
+        <members>Contacts_Management</members>
         <members>Leads_SDR</members>
         <members>Opportunity_Record_Page</members>
         <members>Opportunity_SDR</members>
