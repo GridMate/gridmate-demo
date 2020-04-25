@@ -1,0 +1,88 @@
+<design:component label="RelatedList Grid">
+    <design:attribute name="recordId" label="recordId" 
+                      description="recordId to use. Keep this empty if you want to use the current record"/>        
+    <design:attribute name="relatedListLabel" label="Related List Label" 
+                      description="The label defined in the layout page. Ex. Contacts to display contact list on account page"/>    
+    <design:attribute name="rowLimit" label="Row Limit" 
+                      description="The maximum number of row to fetch"/>
+    <design:attribute name="pageSize" label="PageSize" 
+                      description="The number of row to fetch per step"/>
+    <design:attribute name="customLabel" label="Custom Label" 
+                      description="Override the label of data grid"/> 
+    <design:attribute name="customIcon" label="Custom Icon" 
+                      description="Customize the data grid icon. All lightning icons are supported. You can get the icon name from https://lightningdesignsystem.com/icons/"/> 
+    <design:attribute name="height" label="Grid Height" 
+                      description="Set the grid height"/> 
+    <design:attribute name="columnStyles" label="Column Style" 
+                      description="Json string to define column's style. Don’t forget __c for custom fields. Ex. {'StageName':'width:200px'} to set the width for Stage column"/>     
+    <design:attribute name="filter" label="Filter" 
+                      description="Json string to define filter criteria. Don’t forget __c for custom fields. Ex. {'StageName':'Needs Analysis'} to see only 'Needs Analysis' Opportunities"/>    
+    <design:attribute name="sort" label="Sort" 
+                      description="The field list to sort the data grid. This field is used only for the initial load. Don’t forget __c for custom fields. Ex. Amount to sort opportunities by amount"/>
+    <design:attribute name="order" label="Order" 
+                      description="Asc or Desc order for sorting"/>
+    <design:attribute name="aggregate" label="Aggregate" 
+                      description="Json string to defined the aggregate fields. The components are supporting 'sum', 'minx' and 'max'. Don’t forget __c for custom fields. Ex. {'Amount':'sum'} to aggregate the amount of opportunities"/>    
+    <design:attribute name="showAggregateHeader" label="Show Aggregate Header" 
+                      description="Show the aggregate header as card on the top of the grid"/>    
+    <design:attribute name="canUpdate" label="Enable Update Object" 
+                      description="Check this option if you want to update object"/>    
+    <design:attribute name="canMassUpdate" label="Enable Mass Update" 
+                      description="Check this option if you want to mass update objects"/>        
+    <design:attribute name="canDelete" label="Enable Delete Object" 
+                      description="Check this option if you want to delete object"/>        
+    <design:attribute name="canCreate" label="Enable Create Object" 
+                      description="Check this option if you want to create object"/>    
+    <design:attribute name="canFilter" label="Enable Filter Object" 
+                      description="Check this option if you want to use filters"/>    
+    <design:attribute name="canClone" label="Enable Clone Object" 
+                      description="Check this option if you want to clone objects"/> 
+    <design:attribute name="canExport" label="Enable Export Object" 
+                      description="Check this option if you want to export objects"/>    
+    <design:attribute name="canFreeze" label="Enable Freeze Columns" 
+                      description="Check this option if you want to freeze columns"/>      
+    <design:attribute name="noModalModification" label="Disable Modal Modification" 
+                      description="Check this option if you want to disable modal modification"/>  
+    <design:attribute name="fullRecordCreation" label="Full Record Creation" 
+                      description="Check this option if you want to create a full record"/>      
+    <design:attribute name="noModalCreation" label="Disable Modal Creation" 
+                      description="Check this option if you want to disable modal object creation"/>  
+    <design:attribute name="noInlineCreation" label="Disable Inline Creation" 
+                      description="Check this option if you want to disable inline object creation"/>  
+    <design:attribute name="defaultValues" label="Default Values" 
+                      description="Json string to initialize a new object created from the data grid. Don’t forget __c for custom fields. Ex. {'accountid':'$recordId', 'name':'Opp 1', 'stagename':'Needs Analysis'}"/>
+    <design:attribute name="hiddenFields" label="Hidden Fields"                       
+                      description="',' separated list of hidden fields for modal creation"/>   
+    <design:attribute name="jsonActions" label="Actions" 
+                      description="Json string to initialize the list of available actions from the data grid"/>
+    <design:attribute name="buttonActions" label="Show Actions as Buttons" 
+                      description="Use buttons for actions instead of icons"/>
+    <design:attribute name="visibleActions" label="Custom Visible Actions" 
+                      description="# of visible custom actions"/>        
+    <design:attribute name="frozenColumns" label="Frozen Columns" 
+                      description="# of columns to freeze"/> 
+    <design:attribute name="TotalColor" label="Total Color" 
+                      description="Total row color"/>  
+    <design:attribute name="TotalBgColor" label="Total Background" 
+                      description="Total row background color"/> 
+    <design:attribute name="recordDetail" label="Show Record Details" 
+                      description="Show record details"/>    
+    <design:attribute name="recordRelated" label="Record Related Grids" 
+                      description="Json string to initialize related grids"/>    
+    <design:attribute name="jsonSearchFields" label="Search Fields" 
+                      description="',' separated search fields"/>   
+    <design:attribute name="wildCardSearch" label="Wildcard Search" 
+                      description="Use Wildcard Search"/>
+    <design:attribute name="showBorder" label="Show Border" 
+                      description="Show Border"/>    
+    <design:attribute name="showColumnBorder" label="Show Column Border" 
+                      description="Show Column Border"/>    
+    <design:attribute name="fieldLabels" label="Custom Field Labels" 
+                      description="{name:label} custom field labels map"/>
+    <design:attribute name="readOnlyFields" label="ReadOnly Fields" 
+                      description="',' separated list of readonly fields"/>
+    <design:attribute name="coloring" label="Cell Coloring" 
+                      description="JSON conditions for cells coloring"/>
+    <design:attribute name="lookupOptions" label="Lookup Fields Options" 
+                      description="JSON options for lookup fields {apiName : {titleField : value, subTitleField : value}}"/>
+</design:component>

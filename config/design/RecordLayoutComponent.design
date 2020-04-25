@@ -1,0 +1,6 @@
+<design:component label="Record Layout">    
+    <design:attribute name="recordId" label="recordId" description="recordId to use. Use it only for community"/>        
+    <design:attribute name="targetObjName" label="Object Name" description="Object Name to load"/>    
+    <design:attribute name="recordIdField" label="Record Id Field" description="Record Id Field to load" />
+    <design:attribute name="recordLayout" label="Record Layout" description="JSON Record Layout"/>    
+</design:component>

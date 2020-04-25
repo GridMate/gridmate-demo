@@ -1,0 +1,35 @@
+<design:component label="RelatedList Tabs">
+    <design:attribute name="recordId" label="recordId" 
+                      description="recordId to use. Keep this empty if you want to use the current record"/>        
+    <design:attribute name="relatedListLabel" label="Related List Label" 
+                      description="The label defined in the layout page. Ex. Contacts to display contact list on account page"/>    
+    <design:attribute name="rowLimit" label="Row Limit" 
+                      description="The maximum number of row to fetch"/>    
+    <design:attribute name="filter" label="Filter" 
+                      description="Json string to define filter criteria. Don’t forget __c for custom fields. Ex. {'StageName':'Needs Analysis'} to see only 'Needs Analysis' Opportunities"/>    
+    <design:attribute name="sort" label="Sort" 
+                      description="The field list to sort the data grid. This field is used only for the initial load. Don’t forget __c for custom fields. Ex. Amount to sort opportunities by amount"/>
+    <design:attribute name="order" label="Order" 
+                      description="Asc or Desc order for sorting"/>
+    
+    <design:attribute name="canUpdate" label="Can Update Object" 
+                      description="Check this option if you want to update object"/>    
+    <design:attribute name="canDelete" label="Can Delete Object" 
+                      description="Check this option if you want to delete object"/>        
+    <design:attribute name="canCreate" label="Can Create Object" 
+                      description="Check this option if you want to create object"/>    
+    
+    <design:attribute name="labelField" label="Label Field" 
+                      description="Label Field for Tab title"/>    
+    <design:attribute name="recordFields" label="Record Fields" 
+                      description="Record Fields to display"/>    
+    <design:attribute name="recordRelated" label="Record Related Grids" 
+                      description="Json string to initialize related grids"/>    
+    <design:attribute name="layoutColumns" label="# of Columns" 
+                      description="# of Columns for record layout"/>   
+    
+    <design:attribute name="showBorder" label="Show Border" 
+                      description="Show Border"/> 
+    <design:attribute name="height" label="Grid Height" 
+                      description="Set the grid height"/>     
+</design:component>

@@ -1,0 +1,3 @@
+<design:component label="RelatedLists Grids">
+	<design:attribute name="recordId" label="recordId" description="recordId"/>    
+</design:component>
