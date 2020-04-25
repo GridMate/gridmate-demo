@@ -6,6 +6,7 @@
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>Case.Case_Response__c</members>
         <members>Contact.C_Level__c</members>
         <members>Opportunity.Comments__c</members>
         <members>Opportunity.Deal_Time__c</members>
