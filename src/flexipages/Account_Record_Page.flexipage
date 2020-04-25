@@ -24,96 +24,6 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>TotalBgColor</name>
-                <value>#0070d2</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>TotalColor</name>
-                <value>#FFFFFF</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>buttonActions</name>
-                <value>false</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canClone</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canCreate</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canDelete</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canExport</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canFilter</name>
-                <value>false</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canFreeze</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canMassUpdate</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canUpdate</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>customIcon</name>
-                <value>standard:contact</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>defaultValues</name>
-                <value>{}</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>frozenColumns</name>
-                <value>0</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>jsonActions</name>
-                <value>[]</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>listViewName</name>
-                <value>AllAccounts</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>order</name>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>pageSize</name>
-                <value>10</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>recordRelated</name>
-                <value>[]</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>relatedObjectName</name>
-                <value>Account</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>rowLimit</name>
-                <value>100</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>visibleActions</name>
-                <value>0</value>
-            </componentInstanceProperties>
-            <componentName>gmpkg:ListViewDataGridComponent</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>TotalBgColor</name>
                 <value>#0fbc71</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
@@ -130,23 +40,23 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canClone</name>
-                <value>true</value>
+                <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canCreate</name>
-                <value>true</value>
+                <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canDelete</name>
-                <value>true</value>
+                <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canExport</name>
-                <value>true</value>
+                <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canFilter</name>
-                <value>true</value>
+                <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canFreeze</name>
@@ -154,7 +64,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canMassUpdate</name>
-                <value>true</value>
+                <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canUpdate</name>
@@ -162,11 +72,11 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>coloring</name>
-                <value>{&quot;CloseDate&quot;:[{&quot;color&quot;:&quot;#fac8d4&quot;, &quot;exp&quot;:[{&quot;Late__c&quot;:{&quot;operator&quot;:&quot;=&quot;,&quot;value&quot;:true}}]}],&quot;Amount&quot;:[{&quot;color&quot;:&quot;#d1fac8&quot;, &quot;exp&quot;:[{&quot;Amount&quot;:{&quot;operator&quot;:&quot;&gt;&quot;,&quot;value&quot;:50000}}]}]}</value>
+                <value>{&quot;CloseDate&quot;:[{&quot;color&quot;:&quot;#fac8d4&quot;,&quot;exp&quot;:{&quot;Late__c&quot;:{&quot;operator&quot;:&quot;=&quot;,&quot;value&quot;:true}}}],&quot;Amount&quot;:[{&quot;color&quot;:&quot;#d1fac8&quot;,&quot;exp&quot;:{&quot;Amount&quot;:{&quot;operator&quot;:&quot;&gt;&quot;,&quot;value&quot;:50000}}}]}</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>customIcon</name>
-                <value>standard:opportunity</value>
+                <value>standard:forecasts</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>customLabel</name>
@@ -178,11 +88,15 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>filter</name>
-                <value>{&quot;Amount&quot;:{&quot;operator&quot;:&quot;&gt;&quot;,&quot;value&quot;:&quot;100000&quot;}}</value>
+                <value>{&quot;IsClosed&quot;:{&quot;operator&quot;:&quot;=&quot;,&quot;value&quot;:false}}</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>frozenColumns</name>
                 <value>0</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>fullRecordCreation</name>
+                <value>true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>hiddenFields</name>
@@ -194,7 +108,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>jsonSearchFields</name>
-                <value>StageName,Name,Type</value>
+                <value>StageName</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>order</name>
@@ -202,7 +116,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>pageSize</name>
-                <value>6</value>
+                <value>3</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>recordDetail</name>
@@ -354,6 +268,104 @@
             <componentInstanceProperties>
                 <name>sort</name>
                 <value>CloseDate</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>wildCardSearch</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentName>gmpkg:RelatedListDataGridComponent</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>TotalBgColor</name>
+                <value>#0070d2</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>TotalColor</name>
+                <value>#FFFFFF</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>buttonActions</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canClone</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canCreate</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canDelete</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canExport</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canFilter</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canFreeze</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canMassUpdate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canUpdate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>customIcon</name>
+                <value>standard:case_milestone</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultValues</name>
+                <value>{}</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>filter</name>
+                <value>{&quot;Status&quot;:{&quot;operator&quot;:&quot;in&quot;,&quot;value&quot;:&quot;(&apos;Escalated&apos;,&apos;New&apos;,&apos;On Hold&apos;)&quot;}}</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>frozenColumns</name>
+                <value>0</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>jsonActions</name>
+                <value>[]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>jsonSearchFields</name>
+                <value>CaseNumber,Reason</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>order</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>pageSize</name>
+                <value>10</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>recordRelated</name>
+                <value>[]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListLabel</name>
+                <value>Cases</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>rowLimit</name>
+                <value>100</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>visibleActions</name>
+                <value>0</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>wildCardSearch</name>
@@ -526,60 +538,97 @@
                 <value>standard:case</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
-                <name>customLabel</name>
-                <value>Cases</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
                 <name>defaultValues</name>
                 <value>{}</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>fieldSetName</name>
-                <value>AccountViewFieldSet</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>filter</name>
-                <value>{&quot;AccountId&quot; : {&quot;operator&quot;:&quot;=&quot;, &quot;value&quot;:&quot;$recordId&quot;}}</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>frozenColumns</name>
                 <value>0</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
+                <name>fullRecordCreation</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>jsonActions</name>
-                <value>[]</value>
+                <value>[{&quot;label&quot;:&quot;Send Email&quot;,&quot;name&quot;:&quot;MassEmail&quot;,&quot;component&quot;:&quot;gmpkg:DataGridSendEmailComponent&quot;},{&quot;label&quot;:&quot;Send Case Response&quot;,&quot;name&quot;:&quot;SendCaseResponse&quot;,&quot;component&quot;:&quot;gmpkg:DataGridSendEmailComponent&quot;,&quot;attributes&quot;:{&quot;lockRecipient&quot;:true,&quot;recipient&quot;:&quot;ContactId&quot;,&quot;lockTemplate&quot;:true,&quot;templateName&quot;:&quot;SUPPORTCaseResponsewithSolutionSAMPLE&quot;}}]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>noInlineCreation</name>
+                <value>true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>order</name>
-                <value>desc</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>pageSize</name>
-                <value>6</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>recordDetail</name>
-                <value>true</value>
+                <value>10</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>recordRelated</name>
                 <value>[]</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
-                <name>relatedObjectName</name>
-                <value>Case</value>
+                <name>relatedListLabel</name>
+                <value>Cases</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>rowLimit</name>
-                <value>1000</value>
+                <value>100</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
-                <name>sort</name>
-                <value>Status</value>
+                <name>visibleActions</name>
+                <value>0</value>
             </componentInstanceProperties>
-            <componentName>gmpkg:FieldSetDataGridComponent</componentName>
+            <componentName>gmpkg:RelatedListDataGridComponent</componentName>
         </componentInstances>
         <name>Facet-kb3kvf61hkn</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>canCreate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canDelete</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canUpdate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>filter</name>
+                <value>{&quot;C_Level__c&quot;:true}</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>labelField</name>
+                <value>Name</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>layoutColumns</name>
+                <value>2</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>order</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListLabel</name>
+                <value>Contacts</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>rowLimit</name>
+                <value>6</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showBorder</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentName>gmpkg:RelatedListTabSetComponent</componentName>
+        </componentInstances>
+        <name>Facet-91ebf70f-750f-4beb-b664-d465aa785060</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -677,7 +726,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>recordRelated</name>
-                <value>[{&quot;component&quot;:&quot;gmpkg:RelatedListDataGridComponent&quot;,&quot;attributes&quot;:{ &quot;relatedListLabel&quot;: &quot;Sponsored Opportunities&quot;, &quot;canCreate&quot;:false, &quot;canUpdate&quot;:true, &quot;canDelete&quot;:true, &quot;recordDetail&quot;:true}}]</value>
+                <value>[    {       &quot;component&quot;: &quot;gmpkg:RecordLayoutComponent&quot;,       &quot;attributes&quot;: {          &quot;targetObjName&quot;: &quot;Contact&quot;,          &quot;recordIdField&quot;: &quot;Id&quot;,          &quot;recordLayout&quot;: &quot;{\&quot;sections\&quot;:[{\&quot;name\&quot;:\&quot;workOrderInformation\&quot;,\&quot;label\&quot;:\&quot;Work Order Information\&quot;,\&quot;active\&quot;:true,\&quot;cols\&quot;:2,\&quot;rows\&quot;:[[{\&quot;apiName\&quot;:\&quot;FirstName\&quot;},{\&quot;apiName\&quot;:\&quot;LastName\&quot;,\&quot;readOnly\&quot;:true}]]}]}&quot;       }    } ]</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>relatedListLabel</name>
@@ -708,66 +757,13 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>recordLayout</name>
-                <value>{&quot;sections&quot;:[{&quot;name&quot;:&quot;accountInformation&quot;,&quot;label&quot;:&quot;Account Information&quot;,&quot;active&quot;:true,&quot;cols&quot;:3,&quot;rows&quot;:[[{&quot;apiName&quot;:&quot;Name&quot;},{&quot;apiName&quot;:&quot;Industry&quot;},{&quot;apiName&quot;:&quot;AccountSource&quot;}],[{&quot;apiName&quot;:&quot;Phone&quot;},{&quot;apiName&quot;:&quot;Fax&quot;},{&quot;apiName&quot;:&quot;Website&quot;}],[{&quot;apiName&quot;:&quot;Name&quot;,&quot;colSize&quot;:&quot;2-of-3&quot;,&quot;noWhitespace&quot;:true}],[{&quot;apiName&quot;:&quot;ParentId&quot;,&quot;colSize&quot;:&quot;2-of-3&quot;,&quot;noWhitespace&quot;:true},{&quot;emtyBlock&quot;:true}]]},{&quot;name&quot;:&quot;additionnalInformation&quot;,&quot;label&quot;:&quot;Additional Informations&quot;,&quot;active&quot;:true,&quot;visibility&quot;:{&quot;BillingState&quot;:{&quot;operator&quot;:&quot;=&quot;,&quot;value&quot;:&quot;IL&quot;}},&quot;cols&quot;:2,&quot;rows&quot;:[[{&quot;apiName&quot;:&quot;Type&quot;},{&quot;apiName&quot;:&quot;NumberOfEmployees&quot;}],[{&quot;emtyBlock&quot;:true},{&quot;emtyBlock&quot;:true}],[{&quot;apiName&quot;:&quot;Industry&quot;},{&quot;apiName&quot;:&quot;AnnualRevenue&quot;}]]},{&quot;name&quot;:&quot;addressInformation&quot;,&quot;label&quot;:&quot;Address Information&quot;,&quot;active&quot;:true,&quot;visibility&quot;:{&quot;BillingCountry&quot;:{&quot;operator&quot;:&quot;=&quot;,&quot;value&quot;:&quot;USA&quot;}},&quot;cols&quot;:2,&quot;rows&quot;:[[{&quot;apiName&quot;:&quot;BillingStreet&quot;},{&quot;apiName&quot;:&quot;ShippingStreet&quot;}],[{&quot;apiName&quot;:&quot;BillingCity&quot;},{&quot;apiName&quot;:&quot;ShippingCity&quot;}],[{&quot;apiName&quot;:&quot;BillingPostalCode&quot;},{&quot;apiName&quot;:&quot;ShippingPostalCode&quot;}]]}]}</value>
+                <value>{    &quot;sections&quot;: [       {          &quot;name&quot;: &quot;accountInformation&quot;,          &quot;label&quot;: &quot;Account Information&quot;,          &quot;active&quot;: false,          &quot;cols&quot;: 3,          &quot;rows&quot;: [             [                {                   &quot;apiName&quot;: &quot;Name&quot;                },                {                   &quot;apiName&quot;: &quot;Industry&quot;                },                {                   &quot;apiName&quot;: &quot;AccountSource&quot;                }             ],             [                {                   &quot;apiName&quot;: &quot;Phone&quot;                },                {                   &quot;apiName&quot;: &quot;Fax&quot;                },                {                   &quot;apiName&quot;: &quot;Website&quot;                }             ],             [                {                   &quot;apiName&quot;: &quot;Name&quot;,                   &quot;colSize&quot;: &quot;2-of-3&quot;,                   &quot;noWhitespace&quot;: true                }             ],             [                {                   &quot;apiName&quot;: &quot;ParentId&quot;,                   &quot;colSize&quot;: &quot;2-of-3&quot;,                   &quot;noWhitespace&quot;: true                },                {                   &quot;emtyBlock&quot;: true                }             ]          ]       },       {          &quot;name&quot;: &quot;additionnalInformation&quot;,          &quot;label&quot;: &quot;Additional Informations&quot;,          &quot;active&quot;: false,          &quot;visibility&quot;: {             &quot;BillingState&quot;: {                &quot;operator&quot;: &quot;=&quot;,                &quot;value&quot;: &quot;IL&quot;             }          },          &quot;cols&quot;: 2,          &quot;rows&quot;: [             [                {                   &quot;apiName&quot;: &quot;Type&quot;                },                {                   &quot;apiName&quot;: &quot;NumberOfEmployees&quot;                }             ],             [                {                   &quot;emtyBlock&quot;: true                },                {                   &quot;emtyBlock&quot;: true                }             ],             [                {                   &quot;apiName&quot;: &quot;Industry&quot;                },                {                   &quot;apiName&quot;: &quot;AnnualRevenue&quot;                }             ]          ]       },       {          &quot;name&quot;: &quot;addressInformation&quot;,          &quot;label&quot;: &quot;Address Information&quot;,          &quot;active&quot;: true,          &quot;visibility&quot;: {             &quot;BillingCountry&quot;: {                &quot;operator&quot;: &quot;=&quot;,                &quot;value&quot;: &quot;USA&quot;             }          },          &quot;cols&quot;: 2,          &quot;rows&quot;: [             [                {                   &quot;apiName&quot;: &quot;BillingStreet&quot;                },                {                   &quot;apiName&quot;: &quot;ShippingStreet&quot;                }             ],             [                {                   &quot;apiName&quot;: &quot;BillingCity&quot;                },                {                   &quot;apiName&quot;: &quot;ShippingCity&quot;                }             ],             [                {                   &quot;apiName&quot;: &quot;BillingPostalCode&quot;                },                {                   &quot;apiName&quot;: &quot;ShippingPostalCode&quot;                }             ]          ]       }    ] }</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>targetObjName</name>
                 <value>Account</value>
             </componentInstanceProperties>
             <componentName>gmpkg:RecordLayoutComponent</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>decorate</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>richTextValue</name>
-                <value>&lt;p&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;C Level Contacts&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:richText</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>canCreate</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canDelete</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canUpdate</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>filter</name>
-                <value>{&quot;C_Level__c&quot;:true}</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>labelField</name>
-                <value>Name</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>layoutColumns</name>
-                <value>2</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>order</name>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>relatedListLabel</name>
-                <value>Contacts</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>rowLimit</name>
-                <value>6</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>showBorder</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentName>gmpkg:RelatedListTabSetComponent</componentName>
         </componentInstances>
         <mode>Replace</mode>
         <name>detailTabContent</name>
@@ -813,6 +809,17 @@
         </componentInstances>
         <componentInstances>
             <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-91ebf70f-750f-4beb-b664-d465aa785060</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>C-Level Contacts</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
                 <name>active</name>
                 <value>false</value>
             </componentInstanceProperties>
@@ -822,7 +829,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>title</name>
-                <value>Contacts</value>
+                <value>All Contacts</value>
             </componentInstanceProperties>
             <componentName>flexipage:tab</componentName>
         </componentInstances>

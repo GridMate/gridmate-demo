@@ -7,6 +7,10 @@
                 <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
+                <name>hideChatterActions</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>numVisibleActions</name>
                 <value>3</value>
             </componentInstanceProperties>
@@ -24,6 +28,10 @@
             <componentInstanceProperties>
                 <name>TotalColor</name>
                 <value>#FFFFFF</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>buttonActions</name>
+                <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canClone</name>
@@ -50,12 +58,16 @@
                 <value>true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
+                <name>canMassUpdate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>canUpdate</name>
                 <value>true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>customIcon</name>
-                <value>standard:contact</value>
+                <value>standard:opportunity</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>defaultValues</name>
@@ -101,6 +113,10 @@
                 <value>#FFFFFF</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
+                <name>buttonActions</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>canClone</name>
                 <value>true</value>
             </componentInstanceProperties>
@@ -125,12 +141,16 @@
                 <value>true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
+                <name>canMassUpdate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>canUpdate</name>
                 <value>true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>customIcon</name>
-                <value>standard:apex_plugin</value>
+                <value>standard:case</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>customLabel</name>
@@ -190,7 +210,7 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentName>runtime_sales_social:socialPanel</componentName>
+            <componentName>runtime_sales_activities:activityPanel</componentName>
         </componentInstances>
         <name>newsTabContent</name>
         <type>Facet</type>
@@ -240,7 +260,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>title</name>
-                <value>Standard.Tab.news</value>
+                <value>Standard.Tab.activity</value>
             </componentInstanceProperties>
             <componentName>flexipage:tab</componentName>
         </componentInstances>
@@ -248,29 +268,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>parentFieldApiName</name>
-                <value>Contact.Id</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>relatedListApiName</name>
-                <value>Opportunities</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>relatedListComponentOverride</name>
-                <value>NONE</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>rowsToDisplay</name>
-                <value>10</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>showActionBar</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentName>force:relatedListSingleContainer</componentName>
-        </componentInstances>
         <componentInstances>
             <componentInstanceProperties>
                 <name>tabs</name>
