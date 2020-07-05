@@ -46,6 +46,10 @@
         <name>FlexiPage</name>
     </types>
     <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+    <types>
         <members>Account-Account Layout</members>
         <members>Case-Case Layout</members>
         <members>Contact-Contact Layout</members>
