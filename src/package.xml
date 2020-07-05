@@ -79,5 +79,5 @@
         <members>Project__c.Mass_Edit</members>
         <name>WebLink</name>
     </types>
-    <version>46.0</version>
+    <version>48.0</version>
 </Package>

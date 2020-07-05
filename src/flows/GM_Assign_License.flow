@@ -15,25 +15,6 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
-    <recordCreates>
-        <name>Create_UserPackageLicense</name>
-        <label>Create UserPackageLicense</label>
-        <locationX>403</locationX>
-        <locationY>50</locationY>
-        <inputAssignments>
-            <field>PackageLicenseId</field>
-            <value>
-                <elementReference>Get_PackageLicense.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>UserId</field>
-            <value>
-                <elementReference>UserId</elementReference>
-            </value>
-        </inputAssignments>
-        <object>UserPackageLicense</object>
-    </recordCreates>
     <recordLookups>
         <name>Get_PackageLicense</name>
         <label>Get PackageLicense</label>
@@ -52,6 +33,26 @@
         </filters>
         <object>PackageLicense</object>
     </recordLookups>
+    <recordCreates>
+        <name>Create_UserPackageLicense</name>
+        <label>Create UserPackageLicense</label>
+        <locationX>403</locationX>
+        <locationY>50</locationY>
+        <inputAssignments>
+            <field>PackageLicenseId</field>
+            <value>
+                <!--elementReference>Get_PackageLicense.Id</elementReference-->
+                <elementReference>UserId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UserId</field>
+            <value>
+                <elementReference>UserId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>UserPackageLicense</object>
+    </recordCreates>    
     <startElementReference>Get_PackageLicense</startElementReference>
     <status>Active</status>
     <variables>

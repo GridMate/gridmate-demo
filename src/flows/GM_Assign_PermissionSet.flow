@@ -29,7 +29,8 @@
         <inputAssignments>
             <field>PermissionSetId</field>
             <value>
-                <elementReference>Get_PermissionSet.Id</elementReference>
+                <!--elementReference>Get_PermissionSet.Id</elementReference-->
+                <elementReference>UserId</elementReference>
             </value>
         </inputAssignments>
         <object>PermissionSetAssignment</object>
