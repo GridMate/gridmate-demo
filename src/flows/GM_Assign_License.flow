@@ -41,8 +41,7 @@
         <inputAssignments>
             <field>PackageLicenseId</field>
             <value>
-                <!--elementReference>Get_PackageLicense.Id</elementReference-->
-                <elementReference>UserId</elementReference>
+                <elementReference>Get_PackageLicense.Id</elementReference>                
             </value>
         </inputAssignments>
         <inputAssignments>
