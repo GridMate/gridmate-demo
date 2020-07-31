@@ -1,4 +1,4 @@
-<design:component label="RelatedList Grid">
+<design:component label="GM - RelatedList Grid">
     <design:attribute name="recordId" label="recordId" 
                       description="recordId to use. Keep this empty if you want to use the current record"/>        
     <design:attribute name="relatedListLabel" label="Related List Label" 
@@ -49,6 +49,8 @@
                       description="Check this option if you want to disable modal object creation"/>  
     <design:attribute name="noInlineCreation" label="Disable Inline Creation" 
                       description="Check this option if you want to disable inline object creation"/>  
+    <design:attribute name="inline" label="Disable Refresh View" 
+                      description="Check this option if you want to disable the view refresh after an update"/>                  
     <design:attribute name="defaultValues" label="Default Values" 
                       description="Json string to initialize a new object created from the data grid. Don’t forget __c for custom fields. Ex. {'accountid':'$recordId', 'name':'Opp 1', 'stagename':'Needs Analysis'}"/>
     <design:attribute name="hiddenFields" label="Hidden Fields"                       

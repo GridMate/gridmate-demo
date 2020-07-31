@@ -1,4 +1,4 @@
-<design:component label="Record Card">
+<design:component label="GM - Record Card">
     <design:attribute name="title" label="Card Title" description="Card Title"/>
     <design:attribute name="icon" label="Card Icon" description="Card Icon"/>
     <design:attribute name="showBorder" label="Show border?" description="Show record card border"/>       

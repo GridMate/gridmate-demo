@@ -1,4 +1,4 @@
-<design:component label="Dynamic Tabs">
+<design:component label="GM - Dynamic Tabs">
 	<design:attribute name="tabItems" label="Tabs Config." description="Tabs JSON configuration"/>
     <design:attribute name="showBorder" label="Show border?" />    
 </design:component>

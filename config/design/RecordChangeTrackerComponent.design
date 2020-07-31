@@ -1,0 +1,4 @@
+<design:component label="GM - Record Change Tracker">
+    <design:attribute name="channel" label="Channel" />    
+    <design:attribute name="fields" label="Tracked Fields" />    
+</design:component>

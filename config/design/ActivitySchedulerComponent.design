@@ -1,0 +1,72 @@
+<design:component label="GM - Activity Scheduler">
+    <design:attribute name="activityObjectName" label="Activity Object" 
+                      description="Activity Object"/>        
+    <design:attribute name="activityListViewName" label="Activity ListView" 
+                      description="Activity ListView"/>     
+    <design:attribute name="activityListViewNames" label="Activity ListView(s)" 
+                      description="Available Activity ListView(s)"/>     
+    <design:attribute name="activityFilter" label="Activity Filter" 
+                      description="Activity Filter"/>  
+    <design:attribute name="activitySort" label="Activity Sort" 
+                      description="Activity Sort"/>  
+    <design:attribute name="activityOrder" label="Activity Order" 
+                      description="Activity Order"/>  
+    <design:attribute name="activityTitleFieldName" label="Activity Title Field" 
+                      description="Activity Title Field"/>  
+    <design:attribute name="activitySubTitleFieldName" label="Activity SubTitle Field" 
+                      description="Activity SubTitle Field"/>      
+    <design:attribute name="activityRowLimit" label="Activity RowLimit" 
+                      description="Activity RowLimit"/> 
+    <design:attribute name="activityJsonSearchFields" label="Activity Search Fields" 
+                      description="',' separated search fields"/> 
+    <design:attribute name="activityPopoverFields" label="Activity Popover Fields" 
+                      description="Activity Popover Fields to display"/>
+    
+    <design:attribute name="assigneeObjectName" label="Assignee Object" 
+                      description="Assignee Object"/>        
+    <design:attribute name="assigneeListViewName" label="Assignee ListView" 
+                      description="Assignee ListView"/>     
+    <design:attribute name="assigneeTitleFieldName" label="Assignee Title Field" 
+                      description="Assignee Title Field"/>  
+    <design:attribute name="assigneeSubTitleFieldName" label="Assignee SubTitle Field" 
+                      description="Assignee SubTitle Field"/> 
+    <design:attribute name="workingTimeProvider" label="Working Time Provider" 
+                      description="Working Time Provider"/> 
+    
+    <design:attribute name="assignmentObjectName" label="Assignment Object" 
+                      description="Assignment Object"/>
+    <design:attribute name="assignmentTitleFieldName" label="Assignment Title Field" 
+                      description="Assignment Title Field"/>  
+    <design:attribute name="assigneeIdFieldName" label="Assignee Id Field" 
+                      description="Assignee Id Field"/>  
+    <design:attribute name="activityIdFieldName" label="Activity Id Field" 
+                      description="Activity Id Field"/>   
+    <design:attribute name="activityDateFieldName" label="Activity Date Field" 
+                      description="Activity Date Field"/> 
+    <design:attribute name="activityDurationFieldName" label="Activity Duration Field" 
+                      description="Activity Duration Field"/> 
+    <design:attribute name="defaultValues" label="Default Values" 
+                      description="Json string to initialize a new object created from the scheduler. Don’t forget __c for custom fields"/>
+    <design:attribute name="hiddenFields" label="Hidden Fields"
+                      description="',' separated list of hidden fields for assignment creation"/>  
+    <design:attribute name="assignmentPopoverFields" label="Assignment Popover Fields" 
+                      description="Assignment Popover Fields to display"/>
+
+    <design:attribute name="customLabel" label="Custom Label" 
+                      description="Set the label of scheduler"/> 
+    <design:attribute name="customIcon" label="Custom Icon" 
+                      description="Customize the scheduler icon. All lightning icons are supported. You can get the icon name from https://lightningdesignsystem.com/icons/"/> 
+    <design:attribute name="height" label="Scheduler Height" 
+                      description="Set the scheduler height"/>   
+    <design:attribute name="buttonActions" label="Show Actions as Buttons" 
+                      description="Use buttons for actions instead of icons"/>  
+    
+     <design:attribute name="canUpdate" label="Enable Update Assignment" 
+                      description="Check this option if you want to update assignments"/>    
+    <design:attribute name="canDelete" label="Enable Delete Assignment" 
+                      description="Check this option if you want to delete assignments"/>        
+    <design:attribute name="canCreate" label="Enable Create Assignment" 
+                      description="Check this option if you want to create assignments"/>    
+    <design:attribute name="canFilter" label="Enable Filter Assignment" 
+                      description="Check this option if you want to use filters"/>  
+</design:component>

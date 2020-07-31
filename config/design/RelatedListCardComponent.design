@@ -1,4 +1,4 @@
-<design:component label="GM - RelatedList Tabs">
+<design:component label="GM - RelatedList Cards">
     <design:attribute name="recordId" label="recordId" 
                       description="recordId to use. Keep this empty if you want to use the current record"/>        
     <design:attribute name="relatedListLabel" label="Related List Label" 
@@ -13,21 +13,19 @@
                       description="Asc or Desc order for sorting"/>
     
     <design:attribute name="canUpdate" label="Can Update Object" 
-                      description="Check this option if you want to update object"/>    
-    <design:attribute name="canDelete" label="Can Delete Object" 
-                      description="Check this option if you want to delete object"/>        
-    <design:attribute name="canCreate" label="Can Create Object" 
-                      description="Check this option if you want to create object"/>    
+                      description="Check this option if you want to update object"/>        
     
     <design:attribute name="labelField" label="Label Field" 
-                      description="Label Field for Tab title"/>    
+                      description="Label Field for section title "/>    
     <design:attribute name="recordFields" label="Record Fields" 
                       description="Record Fields to display"/>    
     <design:attribute name="recordRelated" label="Record Related Components" 
-                      description="Json string to initialize related component"/>    
+                      description="Json string to initialize related components"/>    
     <design:attribute name="layoutColumns" label="# of Columns" 
                       description="# of Columns for record layout"/>   
-    
+
+    <design:attribute name="customIcon" label="Custom Icon" 
+                      description="Customize the card icon. All lightning icons are supported. You can get the icon name from https://lightningdesignsystem.com/icons/"/> 
     <design:attribute name="showBorder" label="Show Border" 
                       description="Show Border"/> 
     <design:attribute name="height" label="Component Height" 
