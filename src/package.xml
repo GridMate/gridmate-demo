@@ -30,8 +30,12 @@
         <members>Accounts</members>
         <members>Leads</members>
         <members>Opportunities</members>
-        <members>SDR_Workspace</members>
+        <members>Sales_Workspace</members>
         <name>CustomTab</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FieldSet</name>
     </types>
     <types>
         <members>Account_Record_Page</members>
@@ -44,7 +48,7 @@
         <members>SDR_Workspace</members>
         <members>SDR_Workspace_UtilityBar</members>
         <name>FlexiPage</name>
-    </types>    
+    </types>
     <types>
         <members>Account-Account Layout</members>
         <members>Case-Case Layout</members>

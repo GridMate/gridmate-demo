@@ -2,6 +2,6 @@
 <CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Created by Lightning App Builder</description>
     <flexiPage>SDR_Workspace</flexiPage>
-    <label>SDR Workspace</label>
+    <label>Sales Workspace</label>
     <motif>Custom72: Helicopter</motif>
 </CustomTab>

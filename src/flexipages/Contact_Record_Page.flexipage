@@ -7,6 +7,10 @@
                 <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
+                <name>enableActionsConfiguration</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>hideChatterActions</name>
                 <value>false</value>
             </componentInstanceProperties>
@@ -97,6 +101,10 @@
                 <name>rowLimit</name>
                 <value>200</value>
             </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showBorder</name>
+                <value>true</value>
+            </componentInstanceProperties>
             <componentName>gmpkg:RelatedListDataGridComponent</componentName>
         </componentInstances>
         <name>relatedTabContent</name>
@@ -104,46 +112,6 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentInstanceProperties>
-                <name>TotalBgColor</name>
-                <value>#0070d2</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>TotalColor</name>
-                <value>#FFFFFF</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>buttonActions</name>
-                <value>false</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canClone</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canCreate</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canDelete</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canExport</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canFilter</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canFreeze</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>canMassUpdate</name>
-                <value>true</value>
-            </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canUpdate</name>
                 <value>true</value>
@@ -153,50 +121,33 @@
                 <value>standard:case</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
-                <name>customLabel</name>
-                <value>Open Cases</value>
+                <name>labelField</name>
+                <value>Subject</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
-                <name>defaultValues</name>
-                <value>{&quot;AccountId&quot;:&quot;0013i000003wyUEAAY&quot;,&quot;ContactId&quot;:&quot;0033i0000032UszAAE&quot;,&quot;Description&quot;:null,&quot;Status&quot;:&quot;New&quot;,&quot;Subject&quot;:null}</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>fieldSetName</name>
-                <value>AccountViewFieldSet</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>filter</name>
-                <value>{&quot;ContactId&quot;:{&quot;operator&quot;:&quot;=&quot;,&quot;value&quot;:&quot;$recordId&quot;}}</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>frozenColumns</name>
-                <value>0</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>jsonActions</name>
-                <value>[{&quot;label&quot;:&quot;Update Status&quot;,&quot;name&quot;:&quot;Case.Update_Status&quot;}]</value>
+                <name>layoutColumns</name>
+                <value>2</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>order</name>
-                <value>desc</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
-                <name>recordDetail</name>
-                <value>true</value>
+                <name>recordFields</name>
+                <value>[&quot;OwnerId&quot;, &quot;Status&quot;,&quot;CaseNumber&quot;,&quot;Priority&quot;]</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
-                <name>relatedObjectName</name>
-                <value>Case</value>
+                <name>relatedListLabel</name>
+                <value>Cases</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>rowLimit</name>
-                <value>50</value>
+                <value>6</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
-                <name>sort</name>
-                <value>Status</value>
+                <name>showBorder</name>
+                <value>true</value>
             </componentInstanceProperties>
-            <componentName>gmpkg:FieldSetDataGridComponent</componentName>
+            <componentName>gmpkg:RelatedListCardComponent</componentName>
         </componentInstances>
         <name>Facet-0644c342-c5ee-4625-aad2-e5a0ff6ea059</name>
         <type>Facet</type>
@@ -206,13 +157,6 @@
             <componentName>force:detailPanel</componentName>
         </componentInstances>
         <name>detailTabContent</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
-            <componentName>runtime_sales_activities:activityPanel</componentName>
-        </componentInstances>
-        <name>newsTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -253,17 +197,6 @@
             </componentInstanceProperties>
             <componentName>flexipage:tab</componentName>
         </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>body</name>
-                <value>newsTabContent</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>title</name>
-                <value>Standard.Tab.activity</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:tab</componentName>
-        </componentInstances>
         <name>maintabs</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -278,10 +211,17 @@
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentName>runtime_sales_activities:activityPanel</componentName>
+        </componentInstances>
+        <name>sidebar</name>
+        <type>Region</type>
+    </flexiPageRegions>
     <masterLabel>Contact Record Page</masterLabel>
     <sobjectType>Contact</sobjectType>
     <template>
-        <name>flexipage:recordHomeSingleColTemplateDesktop</name>
+        <name>flexipage:recordHomeTemplateDesktop</name>
     </template>
     <type>RecordPage</type>
 </FlexiPage>

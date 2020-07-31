@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <flexiPageRegions>
-        <name>region1</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <componentInstances>
             <componentInstanceProperties>
                 <name>TotalBgColor</name>
@@ -13,6 +9,10 @@
             <componentInstanceProperties>
                 <name>TotalColor</name>
                 <value>#FFFFFF</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>buttonActions</name>
+                <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>canClone</name>
@@ -27,7 +27,19 @@
                 <value>true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
+                <name>canExport</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>canFilter</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canFreeze</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>canMassUpdate</name>
                 <value>true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
@@ -36,7 +48,11 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>customIcon</name>
-                <value>standard:contact</value>
+                <value>standard:account</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>customLabel</name>
+                <value>Accounts</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>defaultValues</name>
@@ -72,7 +88,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>recordRelated</name>
-                <value>[{&quot;component&quot;:&quot;gmpkg:RelatedListDataGridComponent&quot;,&quot;attributes&quot;:{ &quot;relatedListLabel&quot;: &quot;Opportunities&quot;, &quot;canCreate&quot;:false, &quot;canUpdate&quot;:true, &quot;canDelete&quot;:true, &quot;recordDetail&quot;:true}}, {&quot;component&quot;:&quot;gmpkg:RelatedListDataGridComponent&quot;,&quot;attributes&quot;:{ &quot;relatedListLabel&quot;: &quot;Contacts&quot;, &quot;canCreate&quot;:false, &quot;canUpdate&quot;:true, &quot;canDelete&quot;:true, &quot;recordDetail&quot;:true}}]</value>
+                <value>[{&quot;component&quot;:&quot;gmpkg:RelatedListDataGridComponent&quot;,&quot;attributes&quot;:{&quot;relatedListLabel&quot;:&quot;Opportunities&quot;,&quot;canCreate&quot;:false,&quot;canUpdate&quot;:true,&quot;canDelete&quot;:true,&quot;recordDetail&quot;:true,&quot;customIcon&quot;:&quot;standard:opportunity&quot;}},{&quot;component&quot;:&quot;gmpkg:RelatedListDataGridComponent&quot;,&quot;attributes&quot;:{&quot;relatedListLabel&quot;:&quot;Contacts&quot;,&quot;canCreate&quot;:false,&quot;canUpdate&quot;:true,&quot;canDelete&quot;:true,&quot;recordDetail&quot;:true}}]</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>relatedObjectName</name>
@@ -92,31 +108,12 @@
             </componentInstanceProperties>
             <componentName>gmpkg:FieldSetDataGridComponent</componentName>
         </componentInstances>
-        <name>region2</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>cacheAge</name>
-                <value>1440</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>reportName</name>
-                <value>SampleReportPipelineHistory</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>showRefreshButton</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:reportChart</componentName>
-        </componentInstances>
-        <name>region3</name>
+        <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
     <masterLabel>Accounts</masterLabel>
     <template>
-        <name>flexipage:appHomeTemplateHeaderTwoColumns</name>
+        <name>flexipage:defaultAppHomeTemplate</name>
     </template>
     <type>AppPage</type>
 </FlexiPage>

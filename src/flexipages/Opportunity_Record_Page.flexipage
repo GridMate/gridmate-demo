@@ -7,6 +7,10 @@
                 <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
+                <name>enableActionsConfiguration</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>hideChatterActions</name>
                 <value>false</value>
             </componentInstanceProperties>
@@ -84,7 +88,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>customIcon</name>
-                <value>standard:contact</value>
+                <value>standard:product</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>defaultValues</name>
@@ -110,17 +114,13 @@
                 <name>rowLimit</name>
                 <value>10</value>
             </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showBorder</name>
+                <value>true</value>
+            </componentInstanceProperties>
             <componentName>gmpkg:RelatedListDataGridComponent</componentName>
         </componentInstances>
         <name>Facet-ee11fa57-582c-4639-8219-59ee10b35f6e</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
-            <componentName>force:detailPanel</componentName>
-        </componentInstances>
-        <mode>Replace</mode>
-        <name>detailTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -204,6 +204,10 @@
                 <name>rowLimit</name>
                 <value>100</value>
             </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showBorder</name>
+                <value>true</value>
+            </componentInstanceProperties>
             <componentName>gmpkg:RelatedListDataGridComponent</componentName>
         </componentInstances>
         <name>Facet-8685480f-8c0c-4235-b2a7-4f67d31eb80f</name>
@@ -257,7 +261,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>customIcon</name>
-                <value>standard:contact</value>
+                <value>standard:strategy</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>defaultValues</name>
@@ -289,6 +293,10 @@
             <componentInstanceProperties>
                 <name>rowLimit</name>
                 <value>100</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showBorder</name>
+                <value>true</value>
             </componentInstanceProperties>
             <componentName>gmpkg:RelatedListDataGridComponent</componentName>
         </componentInstances>
@@ -381,12 +389,24 @@
                 <value>100</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
+                <name>showBorder</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>wildCardSearch</name>
                 <value>true</value>
             </componentInstanceProperties>
             <componentName>gmpkg:RelatedListDataGridComponent</componentName>
         </componentInstances>
         <name>Facet-cf322be3-f130-4058-a709-19f5692f2f0c</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentName>force:detailPanel</componentName>
+        </componentInstances>
+        <mode>Replace</mode>
+        <name>detailTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -435,17 +455,6 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>body</name>
-                <value>detailTabContent</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>title</name>
-                <value>Standard.Tab.detail</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:tab</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>body</name>
                 <value>Facet-8685480f-8c0c-4235-b2a7-4f67d31eb80f</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
@@ -473,6 +482,17 @@
             <componentInstanceProperties>
                 <name>title</name>
                 <value>Contact Roles</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>detailTabContent</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Standard.Tab.detail</value>
             </componentInstanceProperties>
             <componentName>flexipage:tab</componentName>
         </componentInstances>

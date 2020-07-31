@@ -203,10 +203,10 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <quickActionList>       
+    <quickActionList>
         <quickActionListItems>
             <quickActionName>Case.LogACall</quickActionName>
-        </quickActionListItems>       
+        </quickActionListItems>
     </quickActionList>
     <relatedContent>
         <relatedContentItems>
